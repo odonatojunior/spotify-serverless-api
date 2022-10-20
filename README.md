@@ -11,3 +11,4 @@ Por isso recomendo ler toda a [documentação da autorização da API do Spotify
 - [x] Consultar os dados da API e retornar as últimas músicas ouvidas
 - [ ] Adicionar a leitura dos parâmetros ```limit``` e ```after``` na API
 - [ ] Separar as rotas em ```currently_playing``` e ```last_played```
+- [ ] [Cache](https://vercel.com/docs/concepts/functions/serverless-functions/edge-caching) nas consultas da API
