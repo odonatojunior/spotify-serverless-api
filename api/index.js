@@ -37,8 +37,7 @@ export default async function(request, response) {
 }
 
 async function getNewToken() {
-  // typescript be like
-  // @ts-ignore
+
   const options = new URLSearchParams({
     grant_type: 'refresh_token',
     refresh_token
