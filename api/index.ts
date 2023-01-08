@@ -1,55 +1,62 @@
-import axios from 'axios';
+import axios from 'axios'
+import type { VercelRequest, VercelResponse } from '@vercel/node'
+import { SpotifyResponse, SpotifyTrack } from 'lib/types/spotify'
 
 const client_id = process.env.SPOTIFY_CLIENT_ID
 const client_secret = process.env.SPOTIFY_CLIENT_SECRET
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN
 
-const basicAuthBuffer = Buffer.from(`${client_id}:${client_secret}`).toString('base64')
+const basicAuthBuffer = Buffer.from(`${client_id}:${client_secret}`).toString(
+  'base64'
+)
 
-const RECENTLY_PLAYED_ENDPOINT = 'https://api.spotify.com/v1/me/player/recently-played'
+const RECENTLY_PLAYED_ENDPOINT =
+  'https://api.spotify.com/v1/me/player/recently-played'
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
 
-
-export default async function(request, response) {
+export default async function (
+  request: VercelRequest,
+  response: VercelResponse
+) {
   const { access_token } = await getNewToken()
 
   const { data } = await axios(RECENTLY_PLAYED_ENDPOINT, {
     headers: {
-      "Authorization": `Bearer ${access_token}`
+      Authorization: `Bearer ${access_token}`,
     },
     params: {
-      limit: 5
-    }
+      limit: 5,
+    },
   })
 
   // gambiarra da desgraça pra parsear o json rapaz
+  //@ts-ignore
   const albums = data.items.map(({ track }) => {
     return {
       name: track.name,
       album: track.album.name,
       cover: track.album.images[0].url,
-      artist: track.artists[0].name
+      artist: track.artists[0].name,
     }
   })
 
-  response.status(200).json(albums)
-  
+  response.status(200).json(data)
 }
 
 async function getNewToken() {
-
+  //@ts-ignore
   const options = new URLSearchParams({
     grant_type: 'refresh_token',
-    refresh_token
+    refresh_token,
   })
 
   const { data } = await axios(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
-      "Authorization": `Basic ${basicAuthBuffer}`,
-      "Content-Type": 'application/x-www-form-urlencoded'
+      Authorization: `Basic ${basicAuthBuffer}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
     },
-    data: options
+    data: options,
   })
 
   return data

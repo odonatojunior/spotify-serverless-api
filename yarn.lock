@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@cspotcode/source-map-support@^0.8.0":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
+  integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
+  dependencies:
+    "@jridgewell/trace-mapping" "0.3.9"
+
+"@edge-runtime/format@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@edge-runtime/format/-/format-1.1.0.tgz#5a209221a8bae7791d6e465c480f146249d1e15f"
+  integrity sha512-MkLDDtPhXZIMx83NykdFmOpF7gVWIdd6GBHYb8V/E+PKWvD2pK/qWx9B30oN1iDJ2XBm0SGDjz02S8nDHI9lMQ==
+
 "@edge-runtime/format@1.1.0-beta.33":
   version "1.1.0-beta.33"
   resolved "https://registry.yarnpkg.com/@edge-runtime/format/-/format-1.1.0-beta.33.tgz#bfba333b47167b0deb09b3df0d5e60d8c72d7c62"
@@ -12,12 +24,42 @@
   resolved "https://registry.yarnpkg.com/@edge-runtime/primitives/-/primitives-1.1.0-beta.36.tgz#f6e8d7971d515d03fcb2ec59e8cb65564fe80440"
   integrity sha512-Tji7SGWmn1+JGSnzFtWUoS7+kODIFprTyIAw0EBOVWEQKWfs7r0aTEm1XkJR0+d1jP9f0GB5LBKG/Z7KFyhx7g==
 
+"@edge-runtime/primitives@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@edge-runtime/primitives/-/primitives-2.0.0.tgz#b4bf44f9cab36aee3027fe4c3ff3cc1d5713e155"
+  integrity sha512-AXqUq1zruTJAICrllUvZcgciIcEGHdF6KJ3r6FM0n4k8LpFxZ62tPWVIJ9HKm+xt+ncTBUZxwgUaQ73QMUQEKw==
+
 "@edge-runtime/vm@1.1.0-beta.36":
   version "1.1.0-beta.36"
   resolved "https://registry.yarnpkg.com/@edge-runtime/vm/-/vm-1.1.0-beta.36.tgz#c5bd6d3823ec252f15fb97c5f65e94084100800c"
   integrity sha512-uPZmL7X+lKBFJsTg8nC0qPDBx4JGgpRqlgJi2s77g2NOtqitQOI90BfIKHZSSoMQEwTqfvAkpu2ui8nazOwHxA==
   dependencies:
     "@edge-runtime/primitives" "1.1.0-beta.36"
+
+"@edge-runtime/vm@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@edge-runtime/vm/-/vm-2.0.0.tgz#9170d2d03761eff4e27687888c4b2d9af1f94c7d"
+  integrity sha512-BOLrAX8IWHRXu1siZocwLguKJPEUv7cr+rG8tI4hvHgMdIsBWHJlLeB8EjuUVnIURFrUiM49lVKn8DRrECmngw==
+  dependencies:
+    "@edge-runtime/primitives" "2.0.0"
+
+"@jridgewell/resolve-uri@^3.0.3":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
+  integrity sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==
+
+"@jridgewell/sourcemap-codec@^1.4.10":
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
+  integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
+
+"@jridgewell/trace-mapping@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz#6534fd5933a53ba7cbf3a17615e273a0d1273ff9"
+  integrity sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@mapbox/node-pre-gyp@^1.0.5":
   version "1.0.10"
@@ -77,6 +119,26 @@
     mkdirp "^1.0.4"
     path-browserify "^1.0.1"
 
+"@tsconfig/node10@^1.0.7":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
+  integrity sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==
+
+"@tsconfig/node12@^1.0.7":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node12/-/node12-1.0.11.tgz#ee3def1f27d9ed66dac6e46a295cffb0152e058d"
+  integrity sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==
+
+"@tsconfig/node14@^1.0.0":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node14/-/node14-1.0.3.tgz#e4386316284f00b98435bf40f72f75a09dabf6c1"
+  integrity sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==
+
+"@tsconfig/node16@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
+  integrity sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==
+
 "@types/json-schema@^7.0.6":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -87,10 +149,20 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.0.tgz#f38c7139247a1d619f6cc6f27b072606af7c289d"
   integrity sha512-IOXCvVRToe7e0ny7HpT/X9Rb2RYtElG1a+VshjwT00HxrM2dWBApHQoqsI6WiY7Q03vdf2bCrIGzVrkF/5t10w==
 
+"@types/node@14.18.33":
+  version "14.18.33"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.33.tgz#8c29a0036771569662e4635790ffa9e057db379b"
+  integrity sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==
+
 "@vercel/build-utils@5.5.5":
   version "5.5.5"
   resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-5.5.5.tgz#bf2cd4db0f441222b94c69d6d068ef2f658194ef"
   integrity sha512-ZBJpqnqm2OqYyWEqfRn0CYvlmSdOf/igtFy58x0bvSbJdN6Dx2rEw9sNg8SU7O/+zWpKP5rRfWcT6iql/p0sCg==
+
+"@vercel/build-utils@5.7.3":
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-5.7.3.tgz#3fbe98f0d22686e1cbcd75cddea249657452436e"
+  integrity sha512-Q4Ei4oG+tx4OnENHqqRlfAks6Rp3U/viOTUITnWpLgoej2xQUnnfk16qvHYZeE1ZGpblPoeDwD8ZWsxOkt3wHA==
 
 "@vercel/go@2.2.13":
   version "2.2.13"
@@ -129,7 +201,12 @@
   resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-3.0.0.tgz#443655b74713ec65531726fb5a30c5c528c804bf"
   integrity sha512-TNQK6cufwrhd8ASDk5YHHenH8Xhp9sY8xUjOTKnQQI37KLk+Sw2HlHhT5rzUFN23ahosUlkY8InwtYUmSNb9kw==
 
-"@vercel/node@2.5.25", "@vercel/node@^2.5.25":
+"@vercel/node-bridge@3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-3.1.3.tgz#7c8d83e18a4cb327def776810df182ecb148fbc0"
+  integrity sha512-NIuiwktIsvCWZ7aToQ4sFWNYKQbojghJ2OobjTL14nj25cuxP3XsV8LkMarIsiWG/vQxiSADBLwr/7fOh8znGg==
+
+"@vercel/node@2.5.25":
   version "2.5.25"
   resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.5.25.tgz#96c39a7113321b3f2bbf8846d0b15a1a61649222"
   integrity sha512-ZR1oarLvMnh2gkMnylappMm9c6VHiYk2VE9kHXkjCeM0IqTPMrH75AWadem3TwlWiwTEQvIKgTiYgUxyGXBM3Q==
@@ -144,6 +221,23 @@
     exit-hook "2.2.1"
     node-fetch "2.6.7"
     ts-node "8.9.1"
+    typescript "4.3.4"
+
+"@vercel/node@^2.8.4":
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.8.4.tgz#bdfc16446e17909c22806af77f7ba0947fb72dfa"
+  integrity sha512-It65+nyMnWZy0jK5AT/kdPW52lzSd7GZDgV7kbToSekHeNggLj0S35J8u6izGMUjQV3BIvRZinRJnu4Ww0FLnA==
+  dependencies:
+    "@edge-runtime/vm" "2.0.0"
+    "@types/node" "14.18.33"
+    "@vercel/build-utils" "5.7.3"
+    "@vercel/node-bridge" "3.1.3"
+    "@vercel/static-config" "2.0.6"
+    edge-runtime "2.0.0"
+    esbuild "0.14.47"
+    exit-hook "2.2.1"
+    node-fetch "2.6.7"
+    ts-node "10.9.1"
     typescript "4.3.4"
 
 "@vercel/python@3.1.22":
@@ -195,10 +289,29 @@
     json-schema-to-ts "1.6.4"
     ts-morph "12.0.0"
 
+"@vercel/static-config@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@vercel/static-config/-/static-config-2.0.6.tgz#9e963eaf9eeebb28d729c963039bb9caf617ae4b"
+  integrity sha512-P0kh9ZBA9RrP4u0pDENxsuU/PAOw/ph+CoGgS5ZfDNa7P0qYhi9TfgVAtjFnGxi0dImq/S49uTVW5NPYWwc+ww==
+  dependencies:
+    ajv "8.6.3"
+    json-schema-to-ts "1.6.4"
+    ts-morph "12.0.0"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
+
+acorn-walk@^8.1.1:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.2.0.tgz#741210f2e2426454508853a2f44d0ab83b7f69c1"
+  integrity sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==
+
+acorn@^8.4.1:
+  version "8.8.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
+  integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
 
 acorn@^8.6.0:
   version "8.8.0"
@@ -438,6 +551,11 @@ convert-hrtime@^3.0.0:
   resolved "https://registry.yarnpkg.com/convert-hrtime/-/convert-hrtime-3.0.0.tgz#62c7593f5809ca10be8da858a6d2f702bcda00aa"
   integrity sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==
 
+create-require@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
+  integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
 crypto-random-string@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
@@ -506,6 +624,21 @@ edge-runtime@1.1.0-beta.38:
   dependencies:
     "@edge-runtime/format" "1.1.0-beta.33"
     "@edge-runtime/vm" "1.1.0-beta.36"
+    exit-hook "2.2.1"
+    http-status "1.5.3"
+    mri "1.2.0"
+    picocolors "1.0.0"
+    pretty-bytes "5.6.0"
+    pretty-ms "7.0.1"
+    time-span "4.0.0"
+
+edge-runtime@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/edge-runtime/-/edge-runtime-2.0.0.tgz#4739e1c8f4237db8ad8a16db5f0e28cc6de16aab"
+  integrity sha512-TmRJhKi4mlM1e+zgF4CSzVU5gJ1sWj7ia+XhVgZ8PYyYUxk4PPjJU8qScpSLsAbdSxoBghLxdMuwuCzdYLd1sQ==
+  dependencies:
+    "@edge-runtime/format" "1.1.0"
+    "@edge-runtime/vm" "2.0.0"
     exit-hook "2.2.1"
     http-status "1.5.3"
     mri "1.2.0"
@@ -1426,6 +1559,25 @@ ts-morph@12.0.0:
     "@ts-morph/common" "~0.11.0"
     code-block-writer "^10.1.1"
 
+ts-node@10.9.1:
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  integrity sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==
+  dependencies:
+    "@cspotcode/source-map-support" "^0.8.0"
+    "@tsconfig/node10" "^1.0.7"
+    "@tsconfig/node12" "^1.0.7"
+    "@tsconfig/node14" "^1.0.0"
+    "@tsconfig/node16" "^1.0.2"
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    arg "^4.1.0"
+    create-require "^1.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    v8-compile-cache-lib "^3.0.1"
+    yn "3.1.1"
+
 ts-node@8.9.1:
   version "8.9.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.9.1.tgz#2f857f46c47e91dcd28a14e052482eb14cfd65a5"
@@ -1504,6 +1656,11 @@ util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+v8-compile-cache-lib@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
+  integrity sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==
 
 vercel@^28.4.11:
   version "28.4.11"
