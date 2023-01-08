@@ -16,11 +16,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true,
-    "baseUrl": "."
+    "skipLibCheck": true
   },
   "include": [
-    "api",
-    "lib"
+    "api/**/*",
+    "lib/**/*",
   ]
 }
