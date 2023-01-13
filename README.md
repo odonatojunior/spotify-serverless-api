@@ -12,6 +12,7 @@ Por isso recomendo ler toda a [documentação da autorização da API do Spotify
 
 - [x] Consultar os dados da API e retornar as últimas músicas ouvidas
 - [/] Adicionar a leitura dos parâmetros `limit` e `after` na API
+- [ ] Traduzir e padronizar esse README.md para inglês
 - [ ] Separar as rotas em `currently_playing` e `last_played`
 - [ ] [Cache](https://vercel.com/docs/concepts/functions/serverless-functions/edge-caching) nas consultas da API
 - [x] Atualizar o mapeamento das pastas no Typescript
