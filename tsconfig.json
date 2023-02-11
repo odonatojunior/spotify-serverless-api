@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "ES6",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "lib": [
+      "ESNext"
+    ],
     "moduleResolution": "node",
     "strict": true,
     "resolveJsonModule": true,
@@ -11,6 +15,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "/api"
   }
 }

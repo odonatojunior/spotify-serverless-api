@@ -4,8 +4,8 @@ import {
   CustomSpotifyApiResponse,
   SpotifyItem,
   SpotifyResponse,
-} from './lib/types/spotify'
-import getNewToken from './lib/auth'
+} from '../lib/types/spotify'
+import getNewToken from '../lib/auth'
 
 const RECENTLY_PLAYED_ENDPOINT =
   'https://api.spotify.com/v1/me/player/recently-played'
