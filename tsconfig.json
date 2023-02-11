@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
+    "target": "ES6",
     "module": "ESNext",
+    "baseUrl": ".",
     "lib": [
-      "ESNext",
-      "DOM"
+      "ESNext"
     ],
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -16,10 +15,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
-  },
-  "include": [
-    "api/**/*",
-    "lib/**/*",
-  ]
+    "skipLibCheck": true,
+    "outDir": "/api"
+  }
 }

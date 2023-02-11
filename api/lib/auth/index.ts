@@ -14,8 +14,6 @@ export default async function getNewToken() {
     refresh_token: config.refresh_token as string,
   })
 
-  axios
-
   const { data } = await axios<SpotifyRefreshToken>(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
